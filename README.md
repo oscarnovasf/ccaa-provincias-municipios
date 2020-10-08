@@ -12,23 +12,23 @@ Tablas vinculadas con CCAA, Provincias y Municipios
 * ### Tabla CCAA (lista_CCAA.sql)
   Estructura:
   |Nombre del campo|Tipo de datos|Descripción|
-  |-|-|-|-|
-  |idCCAA|tinyint(4)|Identificador único de la CCAA|
+  |---|:---:|---|
+  |*idCCAA*|tinyint(4)|Identificador único de la CCAA|
   |Nombre|varchar(100)|Texto con el nombre de la CCAA|
 
 * ### Tabla PROVINCIAS (lista_provincias.sql)
   Estructura:
   |Nombre del campo|Tipo de datos|Descripción|
-  |-|-|-|-|
-  |idProvincia|smallint(6)|Identificador único de la provincia (coincide con los dos primeros dígitos del código postal)|
+  |---|:---:|---|
+  |*idProvincia*|smallint(6)|Identificador único de la provincia (coincide con los dos primeros dígitos del código postal)|
   |idCCAA|tinyint(4)|Identificador de la CCAA a la que pertenece la provincia|
   |Provincia|varchar(30)|Texto con el nombre de la provincia|
 
 * ### Tabla MUNICIPIOS (lista_municipios.sql)
   Estructura:
   |Nombre del campo|Tipo de datos|Descripción|
-  |-|-|-|-|
-  |idMunicipio|smallint(6)|Identificador único del municipio|
+  |---|:---:|---|
+  |*idMunicipio*|smallint(6)|Identificador único del municipio|
   |idProvincia|smallint(6)|Identificador de la provincia a la que pertenece el municipio|
   |codMunicipio|int(11)|Código nacional del municipio|
   |DC|int(11)||
